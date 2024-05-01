@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.avatar{
+  position: relative;
+}
+
+.wrapper{
+  margin-bottom: 20px;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 8px 36px 0px rgba(84,84,84,0.7);
+-webkit-box-shadow: 10px 8px 36px 0px rgba(84,84,84,0.7);
+-moz-box-shadow: 10px 8px 36px 0px rgba(84,84,84,0.7);
+}
+
+img{
+  width: 200px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.isNew{
+  font-weight: bold;
+  position: absolute;
+  background-color: lightcoral;
+  color: whitesmoke;
+  top: 25px;
+  right: -5px;
+  border-radius: 5px;
+  padding: 3px 5px;
+}
+
+
+/* Counter css */
+.counter-container{
+  margin: 20px auto;
+  text-align: center;
+  width: 30%;
+}
+
+.banner{
+  background-color: greenyellow;
+  padding: 5px 0;
+  color: violet;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.counter-wrapper{
+  border: 2px solid lightseagreen;
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 10px 10px 24px -8px rgba(0,0,0,0.79);
+  -webkit-box-shadow: 10px 10px 24px -8px rgba(0,0,0,0.79);
+  -moz-box-shadow: 10px 10px 24px -8px rgba(0,0,0,0.79);
+}
+
+.counter-wrapper:hover{
+  background-color: lightseagreen;
+  opacity: 0.7;
+}
+
+.counter-wrapper h1{
+  font-size: 90px;
+  margin: 25px 0;
+}
+
+.counter-wrapper button{ 
+  font-size: 28px;
+  border: transparent;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
   color: white;
+  background: #4a1be9;
+  background: linear-gradient(31deg,#4a1be9 0%, #00ffaa 80%);
+  background: -webkit-linear-gradient(31deg,#4a1be9 0%, #00ffaa 80%);
+  background: -moz-linear-gradient(31deg,#4a1be9 0%, #00ffaa 80%);
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.total{
+  font-size: 15px;
 }
